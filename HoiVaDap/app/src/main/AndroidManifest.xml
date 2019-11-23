@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doandidong">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ĐĂNG NHẬP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.hoivadap.LinhVuc"
+            android:label="CHỌN LĨNH VỰC"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi">
+
+        </activity>
+        <activity
+            android:name="com.example.hoivadap.GoiCredit"
+            android:label="MUA CREDIT"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi" />
+        <activity
+            android:name="com.example.hoivadap.BangXepHang"
+            android:label="BẢNG XẾP HẠNG"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi" />
+        <activity
+            android:name="com.example.hoivadap.LichSuChoi"
+            android:label="LỊCH SỬ CHƠI"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi" />
+        <activity
+            android:name="com.example.hoivadap.ManHinhTroChoi"
+            android:label="TRÒ CHƠI"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi" />
+        <activity
+            android:name="com.example.hoivadap.DangKy"
+            android:label="ĐĂNG KÝ"
+            android:parentActivityName="com.example.hoivadap.MainActivity" />
+        <activity
+            android:name="com.example.hoivadap.QuanLyTK"
+            android:label="QUẢN LÝ TÀI KHOẢN"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi" />
+        <activity
+            android:name="com.example.hoivadap.GiaoDienNguoiChoi"
+            android:label="MÀN HÌNH CHÍNH"
+            android:parentActivityName="com.example.hoivadap.GiaoDienNguoiChoi" />
+        <activity
+            android:name="com.example.hoivadap.QuenMK"
+            android:label="QUÊN MẬT KHẨU"
+            android:parentActivityName="com.example.hoivadap.MainActivity" />
+        <activity android:name="com.example.hoivadap.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
