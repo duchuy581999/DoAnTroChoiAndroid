@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bestchoose">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ManHinhTroChoi"
+            android:label="MÀN HÌNH TRÒ CHƠI"
+            android:parentActivityName="com.example.bestchoose.ChonLinhVuc"></activity>
+        <activity
+            android:name=".ChonLinhVuc"
+            android:label="CHỌN LĨNH VỤC"
+            android:parentActivityName="com.example.bestchoose.ManHinhChinh"/>
+        <activity
+            android:name=".LichSuChoi"
+            android:label="CHỌN LĨNH VỤC"
+            android:parentActivityName="com.example.bestchoose.ManHinhChinh"/>
+        <activity android:name=".BangXepHang"
+            android:label="BẢNG XẾP HẠNG"
+            android:parentActivityName="com.example.bestchoose.ManHinhChinh"/>
+        <activity android:name=".QuanLyTaiKhoan" />
+        <activity
+            android:name=".QuenMatKhau"
+            android:label="QUÊN MẬT KHẨU"
+            android:parentActivityName="com.example.bestchoose.MainActivity" />
+
+        <activity android:name=".MuaCredit"
+            android:label="MUA CREDIT"
+            android:parentActivityName="com.example.bestchoose.ManHinhChinh"/>
+        <activity android:name=".ManHinhChinh" />
+        <activity
+                  android:name=".DangKy"
+                  android:label="ĐĂNG KÝ"
+                  android:parentActivityName="com.example.bestchoose.MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>
