@@ -51,4 +51,7 @@
     <string name="tendangnhap">Tên đăng nhập</string>
     <string name="email">Email</string>
     <string name="getpass">Lấy lại mật khẩu</string>
+    <string name="diem">Điểm:</string>
+    <string name="textLinhVuc">Lĩnh vực</string>
+    <string name="textCauHoi">Câu hỏi</string>
 </resources>
