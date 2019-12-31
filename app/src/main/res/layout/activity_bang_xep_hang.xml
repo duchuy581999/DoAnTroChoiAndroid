@@ -4,80 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_login"
-    tools:context=".ManHinhChinh">
+    tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-
-    <ImageView
-        android:id="@+id/img_avatar"
-        android:layout_width="80dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user"
-        android:contentDescription="@string/avatar_image" />
-
-    <ImageView
-        android:id="@+id/img_diamond"
-        android:layout_width="80dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/img_avatar"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="@+id/img_avatar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/diamond"
-        android:contentDescription="@string/diamond_image" />
-
-    <TextView
-        android:id="@+id/ten_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/avartar"
-        android:textColor="#E91E63"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_avatar" />
-
-    <TextView
-        android:id="@+id/diamond_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/diamond"
-        android:textColor="#E91E63"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/img_diamond" />
-
-    <TextView
-        android:id="@+id/xephang_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="@string/bangxephang"
-        android:textColor="#FF5722"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/img_diamond"
-        app:layout_constraintStart_toStartOf="@+id/img_avatar"
-        app:layout_constraintTop_toBottomOf="@+id/ten_view" />
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
